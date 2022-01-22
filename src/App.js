@@ -1,11 +1,10 @@
+import React from 'react'
+
 function App(){
     return (
-        <div>
-            <h1>Hello from the App component</h1>
-            <p> Hi</p>
-        </div>        
-        
-    );
+        <div className="container">
+            <h1>My App</h1>
+        </div>
+    )
 }
-
 export default App
