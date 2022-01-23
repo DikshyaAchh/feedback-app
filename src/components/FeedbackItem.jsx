@@ -3,17 +3,18 @@ import { useState } from 'react'
 function FeedbackItem() {
     const [rating, setRating] = useState(7)
     const [text, setText] = useState("Very Good experience")
-    const handleClick = () => {
-      setRating( (prev) => {
-        console.log (prev)
-        return prev+1
-      });
-    }
+    
+      // const handleClick = () => {
+      //   setRating( (prev) => {
+      //     console.log (prev)
+      //     return prev+1
+      //   });
+      // } block comment using tab + cmd + /
 
   return <div className="card">
              <div className="num-display">{rating}</div>
              <div className="text-display">{text}</div>
-             <button onClick={handleClick}>Click here</button>
+             {/*<button onClick={handleClick}>Click here</button>*/}
         </div>;
 
 }
